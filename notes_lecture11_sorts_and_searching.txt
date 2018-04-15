@@ -1,0 +1,17 @@
+Longest repeat string.
+a (a c a a g) t t t (a c a a g) c
+
+brute force o(n^2), examine every substring to compare
+
+optimization, use suffix array + sort. o(nlogn)
+
+form suffix array(store all substring in an array): for string "abcde"
+abcde
+bcde
+cde
+de
+e
+
+then sort the array, and compare adjacent two elements in the array and scan for longest common string.
+
+
